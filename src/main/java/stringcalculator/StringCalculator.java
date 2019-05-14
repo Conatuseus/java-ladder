@@ -21,6 +21,7 @@ public class StringCalculator {
             numbers = getNumbersByCustomDelimiter(formula);
         }
 
+
         throw new RuntimeException("잘못된 문자열입니다.");
     }
 
