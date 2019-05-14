@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class StringCalculator {
-    private static final String DELIMITER_REGEX = ",|:";
+    private static final String DELIMITER_REGEX = "[,:]";
     private List<Integer> numbers = new ArrayList<>();
 
     public StringCalculator(String formula) {
