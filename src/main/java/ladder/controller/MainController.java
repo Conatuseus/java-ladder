@@ -1,9 +1,9 @@
 package ladder.controller;
 
 import ladder.model.Ladder;
-import ladder.model.Player;
 import ladder.model.Players;
 import ladder.view.InputView;
+import ladder.view.OutputView;
 
 public class MainController {
     public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class MainController {
 
         Players players=new Players(names);
         Ladder ladder=new Ladder(height,names.length);
-        System.out.println(players.toString());
-        System.out.println(ladder.toString());
+        OutputView.printResultOfLadder(players, ladder);
+
     }
 }
